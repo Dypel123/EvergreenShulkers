@@ -1,13 +1,13 @@
-name: PerchShulkers
-version: '1.0.0'
+name: EvergreenShulkers
+version: '2.0.0'
 main: me.perch.shulkers.OpenShulker
 api-version: 1.14
-authors: [KayaLambrex]
+authors: [KayaLambrex, Dypel]
 
 commands:
   openshulker:
     permission: openshulker.admin
-    description: Main command for PerchShulkers admin functions.
+    description: Main command for EvergreenShulkers admin functions.
   cleanshulkers:
     permission: openshulker.cleanshulkers
     description: Cleans all shulker boxes in your inventory, armor, offhand, and ender chest, or for another player.
