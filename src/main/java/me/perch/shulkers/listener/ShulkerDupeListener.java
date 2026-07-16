@@ -235,10 +235,8 @@ public final class ShulkerDupeListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
     public void onItemMove(InventoryMoveItemEvent event) {
-        // freeze hopper traffic touching an active source inventory
-        if (this.actions.isSessionPlaceholder(event.getItem())
-                || this.actions.hasActiveSessionForInventory(event.getSource())
-                || this.actions.hasActiveSessionForInventory(event.getDestination())) {
+        // freeze hopper traffic for shulker placeholders specifically
+        if (this.actions.isSessionPlaceholder(event.getItem())) {
             event.setCancelled(true);
         }
     }
